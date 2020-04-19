@@ -1,0 +1,156 @@
+header {
+    padding: 50px;
+    margin-top: 0;
+    text-align: center;
+    background-image: url("title.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.title {
+    margin: 10px;
+    font-size: 4.0em;
+    color: white;
+    text-shadow: 2px 2px 5px grey;
+    font-family: 'Lexend Giga', sans-serif;
+}
+
+nav {
+    text-align:center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color:#F4D03F ;
+    opacity: 60%;
+  }
+  
+nav li {
+    display:inline; 
+}
+  
+nav li a {
+    font-size: 1.2em;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Lexend Giga', sans-serif;
+    text-shadow: 2px 2px 3px grey;
+}
+  
+nav li a:hover {
+    background-color: orange;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.highlight{
+    background-color:#DAF7A6;
+}
+
+.highlight2{
+    background-color:rgba(193, 220, 224, 0.842);
+}
+
+section{
+    padding-left: 100px;
+    padding-right: 30px;
+    padding-top: 120px;
+    padding-bottom: 120px; 
+}
+
+h2{
+    margin-top:0;
+    font-size: xx-large;
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 100;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+
+#introduction {
+    background-color:#FEF9E7;
+}
+
+#mbti{
+    background-color: #FCF3CF;
+}
+
+#mbti a{
+    color: black;
+    text-decoration: none;
+    background-color: #E8DAEF;
+}
+
+/* Horizontal Bar Graph */
+.hGraph ul{ margin:0 50px 0 50px; padding:1px 0 0 0; border:1px solid #ddd; border:0; font-size:11px; list-style:none; font-family: 'Nanum Gothic', sans-serif;}
+.hGraph li{ position:relative; margin:10px 0; white-space:nowrap; vertical-align:top;}
+.hGraph .gTerm{ position:absolute; width:40px; top:0; left:-50px; line-height:20px; text-align:right; color:#767676; font-size: 1.15em; font-weight: bold;}
+.hGraph .gBar{ position:relative; display:inline-block; height:30px; right:-20px; }
+.hGraph .gBar span{ position:absolute; width:40px; line-height:20px; top:0; right:-50px; color:#767676;}
+
+.a { background:rgb(204, 133, 125);}
+.b { background:rgb(206, 167, 131);}
+.c { background: rgb(130, 185, 144);}
+.d { background: rgb(133, 153, 180);}
+.e { background: rgb(184, 149, 204);}
+
+#like{
+    background-color: #F9E79F;
+    padding-right:100px;
+}
+
+div p {
+    margin-top:0;
+    margin-left: 7px;
+    margin-bottom:7px;
+}
+.zzim {
+    font-size: 0.8em;
+    color: rgb(204, 204, 204);
+    margin: 7px;
+    font-weight: bold;
+}
+
+#like div{
+    padding:15px;
+    margin-right:230px;
+    background-color: rgb(37, 37, 37);
+}
+
+img{
+    padding: 0 11px;
+}
+
+footer{
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: #F4D03F;
+    padding: 20px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer img{
+    width:25px;
+    height: 20px;
+    margin: 0 15px;
+}
+footer p{
+    margin:0;
+    padding: 2px 0;
+}
