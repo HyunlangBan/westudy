@@ -19,9 +19,11 @@
 
         <nav>
             <ul>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="#introduction">INTRODUCTION</a></li>
                 <li><a href="#mbti">MBTI</a></li>
-                <li><a href="#like  ">LIKE</a></li>
+                <li><a href="#like">LIKE</a></li>
+                <li><a href="#telepathy">TELEPATHY</a></li>
             </ul>
         </nav>
         
@@ -30,6 +32,16 @@
             <p>제 이름은 <span class="highlight">반현랑</span>입니다. <br>저는 경영정보학을 전공하면서 프로그래밍에 관심을 갖게되었습니다. <br>최근에는 <span class="highlight">웹개발</span>에 관심을 갖게 되었고 더 나아가 <span class="highlight">백엔드 개발자</span>로 성장하고 싶습니다.</p>
             <p>저는 <s>낯을 조금(?) 가리지만</s> 새로운 사람들을 만나는 것과 새로운 환경을 즐기는 편입니다!<br>위코드에서 3개월동안 즐겁게 같이 공부해나가면 좋겠습니다🤗🤗</p>
 
+            <br>
+            <button class="button">Who are you?</button>
+            <script>
+                const button = document.querySelector('button');
+
+                button.onclick = function() {
+                let name = prompt('What is your name?');
+                alert('안녕하세요 ' + name + '님, 만나서 반가워요!');
+                }
+            </script>
         </section>
 
         <section id="mbti">
@@ -57,6 +69,67 @@
                 <img src="kimmy.png" alt="언브레이커블 키미슈미트" width="250" height="375">
                 <img src="stranger.png" alt="기묘한이야기" width="250" height="375">
             </div>
+        </section>
+
+        <section id="telepathy">
+            <h2>#TELEPATHY😏</h2>
+                <div id="telpha">
+                    <div id="first">
+                        <p>1. 짜장면 vs 짬뽕</p>
+                        <button id="짜장면" onclick="add(); changeColor(id);">짜장면</button>
+                        <button id="짬뽕" onclick="changeColor(id);">짬뽕</button>
+
+                    </div>
+                    <div id="second">
+                        <p>2. 부먹 vs 찍먹</p>
+                        <button id="부먹" onclick="changeColor(id);">부먹</button>
+                        <button id="찍먹" onclick="add(); changeColor(id);">찍먹</button>
+                    </div>
+                    <div id="third">
+                        <p>3. 콜라 vs 사이다</p>
+                        <button id="콜라" onclick="add(); changeColor(id)">콜라</button>
+                        <button id="사이다" onclick="changeColor(id);">사이다</button>
+                    </div>
+                    <div id="fourth">
+                        <p>4. 산 vs 바다</p>
+                        <button id="산" onclick="changeColor(id);">산</button>
+                        <button id="바다" onclick="add(); changeColor(id)">바다</button>
+                    </div>
+                    <div id="fifth">
+                        <p>5. 강아지 vs 고양이</p>
+                        <button id="강아지" onclick="add(); changeColor(id)">강아지</button>
+                        <button id="고양이" onclick="changeColor(id);">고양이</button>
+                    </div>
+
+                    <button id="submission" onclick="score()">결과보기</button>
+
+                    <div id="game">
+                    </div>
+                </div>
+
+            <script>
+                let total=0;
+                var point = 20;
+                function add() {
+                    total = total+point;
+                }
+                function score() {
+                    if (total>=60){
+                        document.getElementById('game').innerHTML="당신의 텔레파시 점수는 "+total+"입니다. 저와 공통점이 많으시군요!🎉"
+                    }
+                    else
+                        document.getElementById('game').innerHTML="당신의 텔레파시 점수는 "+total+"입니다. 취향은 조금 다르지만 친해지고 싶어요🌟"
+                }
+                function changeColor(id){
+                    if (document.getElementById(id).style.backgroundColor=="steelblue") {
+                        document.getElementById(id).style.backgroundColor="skyblue";
+                    }
+
+                    else {
+                        document.getElementById(id).style.backgroundColor="steelblue";
+                    }
+                }
+            </script>
         </section>
 
         <footer>

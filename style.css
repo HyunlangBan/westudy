@@ -52,6 +52,20 @@ body {
     font-family: 'Nanum Gothic', sans-serif;
 }
 
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+
 .highlight{
     background-color:#DAF7A6;
 }
@@ -94,12 +108,48 @@ p {
 }
 
 /* Horizontal Bar Graph */
-.hGraph ul{ margin:0 50px 0 50px; padding:1px 0 0 0; border:1px solid #ddd; border:0; font-size:11px; list-style:none; font-family: 'Nanum Gothic', sans-serif;}
-.hGraph li{ position:relative; margin:10px 0; white-space:nowrap; vertical-align:top;}
-.hGraph .gTerm{ position:absolute; width:40px; top:0; left:-50px; line-height:20px; text-align:right; color:#767676; font-size: 1.15em; font-weight: bold;}
-.hGraph .gBar{ position:relative; display:inline-block; height:30px; right:-20px; }
-.hGraph .gBar span{ position:absolute; width:40px; line-height:20px; top:0; right:-50px; color:#767676;}
-
+.hGraph{
+    padding-right: 500px;
+}
+.hGraph ul{ 
+    margin:0 50px 0 50px; 
+    padding:1px 0 0 0; 
+    border:1px solid #ddd; 
+    border:0; font-size:11px; 
+    list-style:none; 
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.hGraph li{ 
+    position:relative; 
+    margin:10px 0; 
+    white-space:nowrap; 
+    vertical-align:top;
+}
+.hGraph .gTerm{ 
+    position:absolute; 
+    width:40px; 
+    top:0; 
+    left:-50px; 
+    line-height:20px; 
+    text-align:right; 
+    color:#767676; 
+    font-size: 1.15em; 
+    font-weight: bold;
+}
+.hGraph .gBar{ 
+    position:relative; 
+    display:inline-block; 
+    height:30px; 
+    right:-20px; 
+}
+.hGraph .gBar span{ 
+    position:absolute; 
+    width:40px; 
+    line-height:20px; 
+    top:0; 
+    right:-50px; 
+    color:#767676;
+}
 .a { background:rgb(204, 133, 125);}
 .b { background:rgb(206, 167, 131);}
 .c { background: rgb(130, 185, 144);}
@@ -131,6 +181,55 @@ div p {
 
 img{
     padding: 0 11px;
+}
+
+button {
+    background-color: skyblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+#game {
+    margin-top: 50px;
+}  
+button:hover {
+    background-color: steelblue;
+}
+
+#submission {
+    margin-top: 50px;
+    background-color: mediumaquamarine;
+}
+
+#submission:hover {
+    background-color: mediumseagreen;
+}
+
+#telpha {
+    padding: 100px;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 300px;
+    background-color: moccasin;
+}
+
+#telepathy {
+    background-color: floralwhite;
+}
+
+#telepathy p{
+    font-size: x-large;
+}
+
+#telepathy div{
+    margin-bottom: 50px;
 }
 
 footer{
